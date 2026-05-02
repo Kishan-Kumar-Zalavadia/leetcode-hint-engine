@@ -211,7 +211,29 @@ After any rebuild, go to `chrome://extensions` and click the **refresh icon** on
 
 ## 🤝 Contributing
 
-PRs welcome. If you find a bug or have an idea, open an issue first so we can discuss it.
+**This project is open for contributions and we genuinely mean it. 🙌**
+
+Whether you're fixing a typo, squashing a bug, or building an entirely new feature — you are welcome here. No contribution is too small.
+
+### Ways you can help
+
+- 🐛 **Found a bug?** Open an issue with steps to reproduce
+- 💡 **Have a feature idea?** Open a discussion — we'd love to hear it
+- 🔧 **Want to write code?** Pick any open issue and comment that you're working on it
+- 📝 **Improve the docs?** Always appreciated
+- 🌍 **Want to add a language?** UI internationalisation is on the wishlist
+- 🧪 **Write tests?** The hint quality eval set (50 problems) from the spec is completely open
+
+### How to contribute
+
+1. Fork the repo
+2. Create a branch: `git checkout -b feature/your-idea`
+3. Make your changes and build: `npm run build`
+4. Open a Pull Request with a clear description of what you changed and why
+
+> 💬 Not sure where to start? Open an issue and say hi — we'll help you find something that fits your skill level.
+
+**Every contributor will be credited. Let's build this together. ◆**
 
 ---
 
