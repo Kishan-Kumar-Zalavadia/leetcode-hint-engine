@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCoach: Socratic hints for LeetCode without spoilers",
+  "version": "1.0.0",
+  "description": "Get unstuck on LeetCode without getting the answer. Your Socratic coding mentor.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://api.anthropic.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/index.ts-CaPWorLy.js"
+      ],
+      "matches": [
+        "https://leetcode.com/problems/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "side_panel": {
+    "default_path": "src/sidepanel/index.html"
+  },
+  "action": {
+    "default_title": "LeetCoach"
+  },
+  "options_page": "src/settings/index.html",
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://leetcode.com/*"
+      ],
+      "resources": [
+        "assets/index.ts-CaPWorLy.js",
+        "assets/index.ts-CaPWorLy.js.map"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}
